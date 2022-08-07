@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Document</title>
+
+  <link rel="icon" type="image/png" href="kits.png">
+ 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body,
+    header,
+    section,
+    footer {
+      padding: 1rem;
+      margin: 1rem;
+      border: 1px solid;
+      border-collapse: collapse;
+    }
+
+    /* Header Section */
+    .header-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 1rem;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .profile-img-container {
+      width: 5rem;
+      margin: 0 1rem;
+    }
+
+    .head-text {
+      margin: 0 1rem;
+    }
+
+    /* Link Section */
+
+    span {
+      margin: 0 5rem;
+    }
+
+    .link-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 1rem;
+    }
+
+    /* About Container */
+    .about-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 1rem;
+    }
+
+    .about-text,
+    .about-audio,
+    .about-video {
+      margin: 1rem 2rem;
+    }
+
+    /* Footer Section */
+    fieldset {
+      padding: 2rem;
+      width: fit-content;
+      margin: 2rem;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button {
+      padding: .2rem 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header-section">
+    <div class="profile-img-container">
+      <img src="apple.png" alt="kits" />
+    </div>
+    <div class="head-text">
+      <h1 class="title">APPLE</h1>
+    </div>
+  </header>
+
+  <!-- Link Section -->
+  <section class="link-container">
+    <div class="links">
+      <a href="https://www.apple.com/in/">Apple website</a>
+      <span>|</span>
+      <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Wikkipedia apple</a>
+      <span>|</span>
+      <a href="https://www.instagram.com/apple/">Instagram Apple</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-container">
+    <div class="about-video">
+      <iframe width="600" height="355" src="https://www.youtube.com/embed/LkRoRQAkelI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="about-and-audio">
+      <div class="about-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only
+        five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and
+        more recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum.
+      </div>
+      <div class="about-audio">
+        <audio controls>
+          <source src="assets/audio/karunya-anthem.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="first-row">
+      <form action="submit_resume.html" target="_blank">
+        <fieldset>
+          <legend>&nbsp;Sign up&nbsp;</legend>
+          <label for="username">*User Name: </label>
+          <input type="text" id="u_name" name="username" placeholder="username" required><br><br>
+          <label for="password">*Password: </label>
+          <input type="password" id="pass" name="password" placeholder="password" required><br><br>
+          <button>Submit</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="second-row">
+      <h3>Contact us</h3>
+      <br>
+      <p>
+        <br>karunya nagar<br> <br>iruttupallam<br> <br>Coimbatore<br>
+        mail id: <a href="mail:ajaymartin@karunya.edu.in">ajaymartin@karunya.edu.in</a>
+        <br><br>
+        Phone no: <a href="tel:+1234567890">+1234567890</a>
+      </p>
+    </div>
+
+    <div class="third-row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.332179094589!2d-122.01116068469496!3d37.33464377984203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1sen!2sin!4v1659892771918!5m2!1sen!2sin"
+        width="400" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+</body>
+
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .title {
+            margin: 1rem 0 2rem 0;
+        }
+
+        .container {
+            margin: 1rem;
+            padding: 2rem;
+            border: 1px solid black;
+        }
+
+        fieldset {
+            padding: 2rem;
+            width: fit-content;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 10rem;
+            text-align: left;
+        }
+        table, td, th, tr{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: .8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <h2 class="title">Submit your resume</h2>
+
+        <!-- Personal Details -->
+        <div class="personal-details">
+            <form action="">
+                <fieldset>
+                    <legend>&nbsp;Personal Details&nbsp;</legend>
+                    <label for="fname">*First Name:</label>
+                    <input type="text" id="firstname" name="fname" placeholder="Enter your first name" required><br><br>
+                    <label for="mname">*Middle Name:</label>
+                    <input type="text" id="middlename" name="mname" placeholder="Enter your middle name"
+                        required><br><br>
+                    <label for="lname">*Last Name:</label>
+                    <input type="text" id="lastname" name="lname" placeholder="Enter your last name"><br><br>
+                    <label for="dob">*Date of Birth:</label>
+                    <input type="date" id="dob" name="dob"><br><br>
+                    <label for="age">*Age:</label>
+                    <input type="number" id="age" name="age" placeholder="18"><br><br>
+                    <label for="gender">*Gender: </label>
+                    <input type="radio" id="gender" name="male" value="Male" checked>
+                    <label for="gender">Male</label>
+                    <input type="radio" id="gender" name="male" value="Male">
+                    <label for="gender">Female</label><br>
+                </fieldset><br>
+                <input type="range" min="1" max="100" value="20" id="slider">&emsp;&emsp;<label for="slider">20% out of
+                    100%</label>
+            </form><br>
+        </div>
+
+        <!-- Address Details -->
+        <div class="address-details">
+            <form action="">
+                <fieldset>
+                    <legend>&nbsp;Address Details&nbsp;</legend>
+                    <label for="address">Address:</label>
+                    <textarea cols="30" rows="2" required></textarea><br><br>
+                    <label for="city-town">City/Town:</label>
+                    <input type="text" id="city-town" name="city" required><br><br>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required><br><br>
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="number" placeholder="only 6 numbers" required>
+                </fieldset><br>
+                <input type="range" min="1" max="100" value="40" id="slider">&emsp;&emsp;<label for="slider">40% out of
+                    100%</label>
+            </form><br>
+        </div>
+
+        <div class="contact-info">
+            <form action="">
+                <fieldset>
+                    <legend>&nbsp;Contact Information&nbsp;</legend>
+                    <label for="Telephone">Telephone:</label>
+                    <input type="number" placeholder="(044) 999-9999" required><br><br>
+                    <label for="mobile">*Mobile:</label>
+                    <input type="number" placeholder="(+91) 99999-99999" required><br><br>
+                    <label for="email">*Email:</label>
+                    <input type="email" placeholder="valid email" required><br><br>
+                    <label for="website">Website:</label>
+                    <input type="text" placeholder="valid url" required>
+                </fieldset><br>
+                <input type="range" min="1" max="100" value="60" id="slider">&emsp;&emsp;<label for="slider">60% out of
+                    100%</label><br>
+            </form><br>
+        </div>
+
+        <div class="education">
+            <form action="">
+                <fieldset>
+                    <legend>&nbsp;Educational Details&nbsp;</legend>
+                    <table>
+                        <tr>
+                            <th>Qualification</th>
+                            <th>Board/University</th>
+                            <th>Country</th>
+                            <th>Starting Year</th>
+                            <th>Ending Year</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox">10th</td>
+                            <td><input type="text" placeholder="Board/University"></td>
+                            <td>
+                                <select>
+                                    <option value="choose">Choose</option>
+                                    <option value="ind">India</option>
+                                    <option value="us">US</option>
+                                    <option value="nz">New Zealand</option>
+                                    <option value="sa">South Africa</option>
+                                </select>
+                            </td>
+                            <td><input type="date"></td>
+                            <td><input type="date"></td>
+                            <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox">12th</td>
+                            <td><input type="text" placeholder="Board/University"></td>
+                            <td>
+                                <select>
+                                    <option value="choose">Choose</option>
+                                    <option value="ind">India</option>
+                                    <option value="us">US</option>
+                                    <option value="nz">New Zealand</option>
+                                    <option value="sa">South Africa</option>
+                                </select>
+                            </td>
+                            <td><input type="date"></td>
+                            <td><input type="date"></td>
+                            <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox">B.Tech</td>
+                            <td><input type="text" placeholder="Board/University"></td>
+                            <td>
+                                <select>
+                                    <option value="choose">Choose</option>
+                                    <option value="ind">India</option>
+                                    <option value="us">US</option>
+                                    <option value="nz">New Zealand</option>
+                                    <option value="sa">South Africa</option>
+                                </select>
+                            </td>
+                            <td><input type="date"></td>
+                            <td><input type="date"></td>
+                            <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox">M.Tech</td>
+                            <td><input type="text" placeholder="Board/University"></td>
+                            <td>
+                                <select>
+                                    <option value="choose">Choose</option>
+                                    <option value="ind">India</option>
+                                    <option value="us">US</option>
+                                    <option value="nz">New Zealand</option>
+                                    <option value="sa">South Africa</option>
+                                </select>
+                            </td>
+                            <td><input type="date"></td>
+                            <td><input type="date"></td>
+                            <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
+                        </tr>
+                    </table>
+                </fieldset><br>
+                <input type="range" min="1" max="100" value="80">&emsp;&emsp;<label for="slider">80% out of 100%</label>
+            </form><br>
+        </div>
+
+        <div class="resume-upload">
+            <form action="">
+                <fieldset>
+                    <label for="attach-resume">Attach your resume in .doc or .pdf format&emsp;&emsp;</label>
+                    <input type="file" id="myresume" name="myresume"><br><br>
+                    <input type="checkbox">&nbsp;I have filled the details</td>
+                </fieldset><br>
+                <input type="range" min="1" max="100" value="100">&emsp;&emsp;<label for="slider">100% out of 100%</label>
+            </form><br>
+        </div>
+        <div class="button-container" style="width: 50%; text-align: center;">
+            <button type="submit" style="padding: .7rem 2rem;">Submit</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
